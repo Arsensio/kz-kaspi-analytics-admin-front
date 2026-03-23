@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import {
   AppBar,
@@ -14,11 +12,14 @@ import {
   Toolbar,
   Typography,
 } from '@mui/material'
+import { useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/useAuth.js'
 
 const navItems = [
   { label: 'Главная', path: '/dashboard' },
   { label: 'Поиск ниши', path: '/niche-search' },
+  { label: 'Продуктовые тарифы', path: '/product-tariffs' },
   { label: 'Тарифы', path: '/plans' },
   { label: 'Пользователи', path: '/users' },
 ]
